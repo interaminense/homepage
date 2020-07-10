@@ -6,8 +6,14 @@ import SocialNetwork from "./components/SocialNetwork";
 import "./css/simple-grid-css.min.css";
 import "./css/main.scss";
 
+const getTheme = () => {
+  const hour = new Date().getHours();
+
+  return hour > 5 && hour < 17 ? "light" : "dark";
+};
+
 export default () => (
-  <>
+  <div className={`App App-theme--${getTheme()}`}>
     <Layout>
       <Layout.Row>
         <Layout.Column size={3}>
