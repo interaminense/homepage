@@ -4,6 +4,7 @@ import Profile from "./components/Profile";
 import CardList from "./components/CardList";
 import SocialNetwork from "./components/SocialNetwork";
 import "./css/simple-grid-css.min.css";
+import "./css/main.scss";
 
 export default () => (
   <>

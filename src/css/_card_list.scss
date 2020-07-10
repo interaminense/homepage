@@ -1,0 +1,11 @@
+.CardList {
+  margin: 1rem;
+  padding: 0;
+  list-style: none;
+  width: calc(100% - 2rem);
+
+  &__item {
+    width: calc((100% / 3) - 2rem);
+    margin: 1rem;
+  }
+}

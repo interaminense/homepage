@@ -1,0 +1,16 @@
+.Profile {
+  padding: 2rem;
+  text-align: center;
+
+  &__name {
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+}

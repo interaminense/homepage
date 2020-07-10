@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind:300&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+  line-height: 1.75rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+}
+
+@import "theme.scss";
+@import "profile.scss";
+@import "thumbnail.scss";
+@import "card_list.scss";
+@import "card.scss";
+@import "social_network.scss";

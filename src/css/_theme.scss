@@ -1,0 +1,45 @@
+.App-theme {
+  &--light {
+    background-color: #f4f4f4;
+    color: #333;
+
+    .Card {
+      color: lighten(#000, 30%);
+      background-color: #fff;
+
+      &__name {
+        color: #333;
+      }
+
+      &__tag {
+        background-color: lighten(#333, 70%);
+      }
+    }
+
+    .SocialNetwork__link {
+      color: lighten(#000, 30%);
+    }
+  }
+
+  &--dark {
+    background-color: #333;
+    color: #fff;
+
+    .Card {
+      color: darken(#fff, 30%);
+      background-color: #212121;
+
+      &__name {
+        color: #fff;
+      }
+
+      &__tag {
+        background-color: darken(#fff, 80%);
+      }
+    }
+
+    .SocialNetwork__link {
+      color: darken(#fff, 30%);
+    }
+  }
+}
