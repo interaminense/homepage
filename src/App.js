@@ -17,14 +17,21 @@ export default () => (
     <Layout>
       <Layout.Row>
         <Layout.Column size={3}>
-          <Profile />
+          <div className="sticky">
+            <Layout.Row>
+              <Layout.Column size={12}>
+                <Profile />
+              </Layout.Column>
+              <Layout.Column size={12}>
+                <SocialNetwork />
+              </Layout.Column>
+            </Layout.Row>
+          </div>
         </Layout.Column>
-        <Layout.Column size={7}>
+        <Layout.Column size={9}>
           <CardList />
         </Layout.Column>
       </Layout.Row>
     </Layout>
-
-    <SocialNetwork />
-  </>
+  </div>
 );
