@@ -8,4 +8,10 @@
     width: calc((100% / 3) - 2rem);
     margin: 1rem;
   }
+
+  @media (max-width: 768px) {
+    &__item {
+      width: 100%;
+    }
+  }
 }
