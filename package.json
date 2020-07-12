@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
