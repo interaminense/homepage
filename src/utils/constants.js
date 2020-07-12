@@ -260,7 +260,8 @@ export const Profile = {
   name: "Adriano Interaminense",
   description: (age, experienceTime) =>
     `Hello, how are you? I'm ${age} years old. At least ${experienceTime} years of professional experience as Frontend. I currently work at Liferay as Frontend Engineer and I <3 what I do!<br /><br /><b>adriano.interaminense@gmail.com</b>`,
-  image: `https://avatars2.githubusercontent.com/u/12699849?s=${THUMBNAIL_SIZE}&u=813da44f9c0ec4a88aa0be8ce52f35bc0b123a74&v=4`,
+  image: (thumbnailSize) =>
+    `https://avatars2.githubusercontent.com/u/12699849?s=${thumbnailSize}&u=813da44f9c0ec4a88aa0be8ce52f35bc0b123a74&v=4`,
   birthYear: 1989,
   startWoring: 2009,
 };

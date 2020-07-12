@@ -17,7 +17,7 @@ export default () => {
           <Thumbnail
             className="Profile__thumbnail"
             size={THUMBNAIL_SIZE}
-            src={Profile.image}
+            src={Profile.image(THUMBNAIL_SIZE)}
           />
         </Layout.Column>
         <Layout.Column size={12}>
