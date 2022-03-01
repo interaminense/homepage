@@ -19,6 +19,11 @@
     .Tag {
       background-color: lighten(#333, 70%);
     }
+
+    .Profile__toggle-theme {
+      background: #ffff;
+      box-shadow: 0 0 0 6px inset #333;
+    }
   }
 
   &--dark {
@@ -40,6 +45,11 @@
 
     .Tag {
       background-color: darken(#fff, 80%);
+    }
+
+    .Profile__toggle-theme {
+      background: #333;
+      box-shadow: 0 0 0 6px inset #fff;
     }
   }
 }

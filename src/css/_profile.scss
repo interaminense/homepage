@@ -13,4 +13,20 @@
     font-size: 20px;
     line-height: 2rem;
   }
+
+  &__toggle-theme {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    border: 0 none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }

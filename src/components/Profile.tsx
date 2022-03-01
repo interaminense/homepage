@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "./Layout";
 import Thumbnail from "./Thumbnail";
 import { TProfile } from "../types";
+import AppContext from "../AppContext";
 
 const THUMBNAIL_SIZE = 128;
 
@@ -18,6 +19,8 @@ const Profile: React.FC<IProfileProps> = ({
   const age = fullYear - birthYear;
   const experienceTime = fullYear - startWoring;
 
+  const { theme, toggleTheme } = React.useContext(AppContext);
+
   return (
     <Layout className="Profile">
       <Layout.Row>
@@ -26,6 +29,12 @@ const Profile: React.FC<IProfileProps> = ({
             className="Profile__thumbnail"
             size={THUMBNAIL_SIZE}
             src={image(THUMBNAIL_SIZE)}
+          />
+          <button
+            className="Profile__toggle-theme"
+            onClick={() => {
+              toggleTheme({ theme: theme === "light" ? "dark" : "light" });
+            }}
           />
         </Layout.Column>
         <Layout.Column size={12}>
