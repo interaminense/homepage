@@ -7,34 +7,35 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-import steveJobsImage from "../images/steve-jobs.png";
-import customYourCarImage from "../images/custom-your-car.png";
-import cssPerspectiveImage from "../images/css-perspective.png";
-import wolfImage from "../images/wolf.png";
-import sayHelloToWorldImage from "../images/say-hello-to-world.png";
-import starrySkyImage from "../images/starry-sky.png";
-import earthDayImage from "../images/earth-day.png";
-import codeAnimatedImage from "../images/code-animated.png";
-import cssFilterEffectsImage from "../images/css-filter-effects.png";
-import FifteenPuzzleGameImage from "../images/fifteen-puzzle-game.png";
-import MemoryGameJSImage from "../images/memory-game-js.png";
-import ReactUIThermometerImage from "../images/react-ui-thermometer.png";
-import PlottingPerfectYAxesImage from "../images/plotting-perfect-y-axes.png";
-import LearningEnglishImage from "../images/learning-english.gif";
-import ReactPortfolioBehanceImage from "../images/react-portfolio-behance.png";
-import SimpleGridCssImage from "../images/simple-grid-css.png";
-import MathematicsImage from "../images/mathematics.png";
-import SidebarDirectiveAngularJSImage from "../images/sidebar-directive-angular-js.png";
-import MarionetteImage from "../images/marionette.png";
-import LettersAnimatedImage from "../images/letters-animated.png";
-import DiaDosNamoradosImage from "../images/dia-dos-namorados.png";
-import BeerJSRecifeImage from "../images/beer-js-recife.png";
-import PiaoDaAtualizacaoImage from "../images/piao-da-atualizacao.png";
-import NeonImage from "../images/neon.png";
-import DeAnimatedImage from "../images/de-animated.png";
-import DilmesIpsumImage from "../images/dilmes-ipsum.png";
+import steveJobsImage from "./images/steve-jobs.png";
+import customYourCarImage from "./images/custom-your-car.png";
+import cssPerspectiveImage from "./images/css-perspective.png";
+import wolfImage from "./images/wolf.png";
+import sayHelloToWorldImage from "./images/say-hello-to-world.png";
+import starrySkyImage from "./images/starry-sky.png";
+import earthDayImage from "./images/earth-day.png";
+import codeAnimatedImage from "./images/code-animated.png";
+import cssFilterEffectsImage from "./images/css-filter-effects.png";
+import FifteenPuzzleGameImage from "./images/fifteen-puzzle-game.png";
+import MemoryGameJSImage from "./images/memory-game-js.png";
+import ReactUIThermometerImage from "./images/react-ui-thermometer.png";
+import PlottingPerfectYAxesImage from "./images/plotting-perfect-y-axes.png";
+import LearningEnglishImage from "./images/learning-english.gif";
+import ReactPortfolioBehanceImage from "./images/react-portfolio-behance.png";
+import SimpleGridCssImage from "./images/simple-grid-css.png";
+import MathematicsImage from "./images/mathematics.png";
+import SidebarDirectiveAngularJSImage from "./images/sidebar-directive-angular-js.png";
+import MarionetteImage from "./images/marionette.png";
+import LettersAnimatedImage from "./images/letters-animated.png";
+import DiaDosNamoradosImage from "./images/dia-dos-namorados.png";
+import BeerJSRecifeImage from "./images/beer-js-recife.png";
+import PiaoDaAtualizacaoImage from "./images/piao-da-atualizacao.png";
+import NeonImage from "./images/neon.png";
+import DeAnimatedImage from "./images/de-animated.png";
+import DilmesIpsumImage from "./images/dilmes-ipsum.png";
+import { TProfile, TProject, TSocialNetwork } from "./types";
 
-export const Projects = [
+export const Projects: TProject[] = [
   {
     name: "Steve Jobs",
     description:
@@ -256,7 +257,7 @@ export const Projects = [
   },
 ];
 
-export const Profile = {
+export const Profile: TProfile = {
   name: "Adriano Interaminense",
   description: (age, experienceTime) =>
     `Hello, how are you? I'm ${age} years old. At least ${experienceTime} years of professional experience as Frontend. I currently work at Liferay as Frontend Engineer and I <3 what I do!<br /><br /><b>adriano.interaminense@gmail.com</b>`,
@@ -266,7 +267,7 @@ export const Profile = {
   startWoring: 2009,
 };
 
-export const SocialNetwork = [
+export const SocialNetwork: TSocialNetwork[] = [
   {
     icon: faGithub,
     url: "http://github.com/interaminense",

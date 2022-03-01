@@ -1,14 +1,22 @@
 import React from "react";
 import Layout from "./Layout";
-import Thumbnail from "./Thumbnail.js";
-import { Profile } from "../utils/constants";
+import Thumbnail from "./Thumbnail";
+import { TProfile } from "../types";
 
 const THUMBNAIL_SIZE = 128;
 
-export default () => {
+interface IProfileProps extends React.HTMLAttributes<HTMLElement>, TProfile {}
+
+const Profile: React.FC<IProfileProps> = ({
+  birthYear,
+  startWoring,
+  image,
+  name,
+  description,
+}) => {
   const fullYear = new Date().getFullYear();
-  const age = fullYear - Profile.birthYear;
-  const experienceTime = fullYear - Profile.startWoring;
+  const age = fullYear - birthYear;
+  const experienceTime = fullYear - startWoring;
 
   return (
     <Layout className="Profile">
@@ -17,11 +25,11 @@ export default () => {
           <Thumbnail
             className="Profile__thumbnail"
             size={THUMBNAIL_SIZE}
-            src={Profile.image(THUMBNAIL_SIZE)}
+            src={image(THUMBNAIL_SIZE)}
           />
         </Layout.Column>
         <Layout.Column size={12}>
-          <h2 className="Profile__name">{Profile.name}</h2>
+          <h2 className="Profile__name">{name}</h2>
         </Layout.Column>
       </Layout.Row>
       <Layout.Row>
@@ -29,7 +37,7 @@ export default () => {
           <p
             className="Profile__description"
             dangerouslySetInnerHTML={{
-              __html: Profile.description(age, experienceTime),
+              __html: description(age, experienceTime),
             }}
           ></p>
         </Layout.Column>
@@ -37,3 +45,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default Profile;

@@ -1,10 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SocialNetwork } from "../utils/constants";
+import { TSocialNetwork } from "../types";
 
-export default () => (
+interface ISocialNetworkProps extends React.HTMLAttributes<HTMLElement> {
+  socialNetwork: TSocialNetwork[];
+}
+
+const SocialNetwork: React.FC<ISocialNetworkProps> = ({ socialNetwork }) => (
   <ul className="SocialNetwork">
-    {SocialNetwork.map(({ icon, url }, index) => (
+    {socialNetwork.map(({ icon, url }, index) => (
       <li className="SocialNetwork__item" key={index}>
         <a
           className="SocialNetwork__link"
@@ -21,3 +25,5 @@ export default () => (
     ))}
   </ul>
 );
+
+export default SocialNetwork;

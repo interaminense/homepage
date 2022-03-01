@@ -3,6 +3,12 @@ import Layout from "./components/Layout";
 import Profile from "./components/Profile";
 import CardList from "./components/CardList";
 import SocialNetwork from "./components/SocialNetwork";
+import {
+  Profile as ProfileData,
+  Projects,
+  SocialNetwork as SocialNetworkData,
+} from "./data";
+
 import "./css/simple-grid-css.min.css";
 import "./css/main.scss";
 
@@ -20,16 +26,16 @@ export default () => (
           <div className="sticky">
             <Layout.Row>
               <Layout.Column size={12}>
-                <Profile />
+                <Profile {...ProfileData} />
               </Layout.Column>
               <Layout.Column size={12}>
-                <SocialNetwork />
+                <SocialNetwork socialNetwork={SocialNetworkData} />
               </Layout.Column>
             </Layout.Row>
           </div>
         </Layout.Column>
         <Layout.Column size={9}>
-          <CardList />
+          <CardList items={Projects} />
         </Layout.Column>
       </Layout.Row>
     </Layout>

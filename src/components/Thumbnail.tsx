@@ -1,6 +1,11 @@
 import React from "react";
 
-export default ({ src, size }) => (
+interface IThumbnailProps extends React.HTMLAttributes<HTMLElement> {
+  size: number;
+  src: string;
+}
+
+const Thumbnail: React.FC<IThumbnailProps> = ({ src, size }) => (
   <div
     className="Thumbnail"
     style={{
@@ -18,3 +23,5 @@ export default ({ src, size }) => (
     />
   </div>
 );
+
+export default Thumbnail;

@@ -1,6 +1,18 @@
 import React from "react";
+import { TProject } from "../types";
 
-export default ({ name, date, description, image, url, tags }) => (
+interface ICardProps
+  extends React.HTMLAttributes<HTMLAnchorElement>,
+    TProject {}
+
+const Card: React.FC<ICardProps> = ({
+  name,
+  date,
+  description,
+  image,
+  url,
+  tags,
+}) => (
   <a className="Card" href={url} rel="noopener noreferrer" target="_blank">
     <div className="Card__header">
       <img src={image} alt="Card" />
@@ -11,9 +23,9 @@ export default ({ name, date, description, image, url, tags }) => (
 
       <span>{date}</span>
 
-      <p className="Card__description">{description}</p>
+      {description && <p className="Card__description">{description}</p>}
 
-      {!!tags.length && (
+      {tags && !!tags.length && (
         <div className="Card__tags">
           {tags.map((tag, index) => (
             <span className="Card__tag" key={index}>
@@ -25,3 +37,5 @@ export default ({ name, date, description, image, url, tags }) => (
     </div>
   </a>
 );
+
+export default Card;
