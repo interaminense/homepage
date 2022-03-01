@@ -1,17 +1,11 @@
 .CardList {
-  margin: 1rem;
-  padding: 0;
-  list-style: none;
-  width: calc(100% - 2rem);
+  column-count: 3;
+  column-gap: 2rem;
 
   &__item {
-    width: calc((100% / 3) - 2rem);
-    margin: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    &__item {
-      width: 100%;
-    }
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 2rem;
+    break-inside: avoid;
   }
 }

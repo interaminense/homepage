@@ -14,7 +14,6 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-masonry-component": "^6.2.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
