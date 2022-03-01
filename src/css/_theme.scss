@@ -10,14 +10,14 @@
       &__name {
         color: #333;
       }
-
-      &__tag {
-        background-color: lighten(#333, 70%);
-      }
     }
 
     .SocialNetwork__link {
       color: lighten(#000, 30%);
+    }
+
+    .Tag {
+      background-color: lighten(#333, 70%);
     }
   }
 
@@ -32,14 +32,14 @@
       &__name {
         color: #fff;
       }
-
-      &__tag {
-        background-color: darken(#fff, 80%);
-      }
     }
 
     .SocialNetwork__link {
       color: darken(#fff, 30%);
+    }
+
+    .Tag {
+      background-color: darken(#fff, 80%);
     }
   }
 }

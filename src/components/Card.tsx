@@ -1,4 +1,5 @@
 import React from "react";
+import Tag from "./Tag";
 import { TProject } from "../types";
 
 interface ICardProps
@@ -27,10 +28,8 @@ const Card: React.FC<ICardProps> = ({
 
       {tags && !!tags.length && (
         <div className="Card__tags">
-          {tags.map((tag, index) => (
-            <span className="Card__tag" key={index}>
-              {tag}
-            </span>
+          {tags.map((name, index) => (
+            <Tag key={index} tagName={name} />
           ))}
         </div>
       )}
