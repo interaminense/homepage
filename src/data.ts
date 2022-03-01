@@ -41,7 +41,7 @@ export const Projects: TProject[] = [
     name: "Steve Jobs",
     description:
       "Pen created based on https://dribbble.com/shots/288104-Steve-Jobs, using the box-shadow tecnical to draw the image pixelated",
-    date: "September, 2017",
+    date: "2017/09/01",
     url: "https://codepen.io/interaminense/full/vJbaGB",
     tags: ["Css3", "box-shadow", "codepen"],
     image: steveJobsImage,
@@ -49,7 +49,7 @@ export const Projects: TProject[] = [
   {
     name: "Custom your car",
     description: "Pen created to show the power of CSS Filter",
-    date: "August, 2017",
+    date: "2017/08/01",
     url: "https://codepen.io/interaminense/full/WEgJPp",
     tags: ["Css3", "codepen"],
     image: customYourCarImage,
@@ -58,7 +58,7 @@ export const Projects: TProject[] = [
     name: "Css perspective",
     description:
       "transform: perspective(400px) rotateX(20deg) rotateY(-15deg);",
-    date: "August, 2017",
+    date: "2017/08/01",
     url: "https://codepen.io/interaminense/full/prNBbQ",
     tags: ["Css3", "perspective", "codepen"],
     image: cssPerspectiveImage,
@@ -67,7 +67,7 @@ export const Projects: TProject[] = [
     name: "Wolf",
     description:
       "Wolf is a pen based on https://dribbble.com/shots/1850390-Wolf and modified to receive animations in CSS. I hope you enjoy!!",
-    date: "April, 2016",
+    date: "2016/04/01",
     url: "https://codepen.io/interaminense/full/oxEgpe",
     tags: ["Css3", "rotation", "codepen"],
     image: wolfImage,
@@ -75,7 +75,7 @@ export const Projects: TProject[] = [
   {
     name: "Say hello to world!",
     description: "Pen created with data base Firebase. Say hello to world!",
-    date: "August, 2017",
+    date: "2017/08/01",
     url: "https://codepen.io/interaminense/full/MvQVjQ",
     tags: ["Css3", "firebase", "angulaJS", "codepen"],
     image: sayHelloToWorldImage,
@@ -83,7 +83,7 @@ export const Projects: TProject[] = [
   {
     name: "Starry Sky",
     description: "My first pen. It is a classic for me ;)",
-    date: "December, 2015",
+    date: "2015/12/01",
     url: "https://codepen.io/interaminense/full/QyGbXL",
     tags: ["Css3", "codepen", "classic"],
     image: starrySkyImage,
@@ -91,14 +91,14 @@ export const Projects: TProject[] = [
   {
     name: "EarthDay",
     description: "Pen in honor of the Day of Planet Earth",
-    date: "April, 2016",
+    date: "2016/04/01",
     url: "https://codepen.io/interaminense/full/aNjvKq",
     tags: ["Css3", "codepen"],
     image: earthDayImage,
   },
   {
     name: "Code Animated",
-    date: "July, 2017",
+    date: "2017/06/01",
     url: "https://codepen.io/interaminense/full/VWOoXB",
     tags: ["Css3", "codepen"],
     image: codeAnimatedImage,
@@ -106,7 +106,7 @@ export const Projects: TProject[] = [
   {
     name: "Css Filter Effects",
     description: "demo about filters in CSS3",
-    date: "July, 2016",
+    date: "2016/06/01",
     url: "https://codepen.io/interaminense/full/NAXkoK",
     tags: ["Css3", "Css Filter", "codepen"],
     image: cssFilterEffectsImage,
@@ -114,7 +114,7 @@ export const Projects: TProject[] = [
   {
     name: "Fifteen puzzle game",
     description: "Having fun with this classic game",
-    date: "June, 2019",
+    date: "2019/06/01",
     url: "http://www.interaminense.com/fifteen-puzzle-game/",
     tags: ["ReactJS", "typescript", "Github", "html5", "game"],
     image: FifteenPuzzleGameImage,
@@ -122,7 +122,7 @@ export const Projects: TProject[] = [
   {
     name: "Memory game JS",
     description: "Play game with this classic Memory game",
-    date: "April, 2020",
+    date: "2020/04/01",
     url: "https://www.interaminense.com/memory-game-js/",
     tags: ["ReactJS", "Github", "html5", "game"],
     image: MemoryGameJSImage,
@@ -130,7 +130,7 @@ export const Projects: TProject[] = [
   {
     name: "React UI Thermometer",
     description: "",
-    date: "July, 2017",
+    date: "2017/06/01",
     url: "http://www.interaminense.com/react-ui-thermometer/",
     tags: ["ReactJS", "Github", "React", "Component"],
     image: ReactUIThermometerImage,
@@ -139,7 +139,7 @@ export const Projects: TProject[] = [
     name: "Plotting Perfect Y axes",
     description:
       "the intent of this repository is to show how to plot axes dynamically and that is easy to understand for anyone reading a chart",
-    date: "Aug, 2018",
+    date: "2018/08/01",
     url: "http://www.interaminense.com/plotting-perfect-y-axes/",
     tags: ["ReactJS", "D3", "Github", "Chart"],
     image: PlottingPerfectYAxesImage,
@@ -148,7 +148,7 @@ export const Projects: TProject[] = [
     name: "Learning English 🇬🇧",
     description:
       "Useful links that will help me (and probably you) to learn English through the Internet.",
-    date: "Mar, 2017",
+    date: "2017/03/01",
     url: "https://github.com/interaminense/learning-english",
     tags: ["Learning English", "Github"],
     image: LearningEnglishImage,
@@ -157,7 +157,7 @@ export const Projects: TProject[] = [
     name: "React Portfolio Behance",
     description:
       "This component lists all the projects you have registered in your Behance account, being able to customize your Portfolio too.",
-    date: "July, 2017",
+    date: "2017/06/01",
     url: "http://www.interaminense.com/react-portfolio-behance/",
     tags: ["ReactJS", "Behance", "Github"],
     image: ReactPortfolioBehanceImage,
@@ -166,7 +166,7 @@ export const Projects: TProject[] = [
     name: "Simple Grid Css",
     description:
       "Simple Grid Css is a responsive grid system based on flexbox css",
-    date: "November, 2017",
+    date: "2017/11/01",
     url: "http://github.com/interaminense/simple-grid-css",
     tags: ["Css", "Grid", "Github"],
     image: SimpleGridCssImage,
@@ -175,7 +175,7 @@ export const Projects: TProject[] = [
     name: "Mathematics",
     description:
       "This mini game was created in order to strengthen the mind of those who practice mathematical operations. It's simple, play and try to beat your opponent's record",
-    date: "November, 2015",
+    date: "2015/11/01",
     url: "http://www.interaminense.com/mathematics/",
     tags: ["AngularJS", "Mathematics", "html5", "game", "firebase", "Github"],
     image: MathematicsImage,
@@ -184,7 +184,7 @@ export const Projects: TProject[] = [
     name: "Sidebar Directive AngularJS",
     description:
       "Directive created to give agility in the construction of a simple sidebar",
-    date: "December, 2016",
+    date: "2016/12/01",
     url: "http://www.interaminense.com/sidebar-directive-angular/",
     tags: ["AngularJS", "Sidebar", "Github"],
     image: SidebarDirectiveAngularJSImage,
@@ -192,7 +192,7 @@ export const Projects: TProject[] = [
   {
     name: "Marionette",
     description: "Prototype to create a marionette",
-    date: "June, 2016",
+    date: "2016/05/01",
     url: "https://github.com/interaminense/marionette-css",
     tags: ["Marionette", "Jquery", "Github"],
     image: MarionetteImage,
@@ -200,7 +200,7 @@ export const Projects: TProject[] = [
   {
     name: "Letters animated",
     description: "short and lively sentences with css3",
-    date: "December, 2015",
+    date: "2015/12/01",
     url: "http://www.interaminense.com/letters-animated/",
     tags: ["Material Design", "Css Animated", "Github"],
     image: LettersAnimatedImage,
@@ -208,7 +208,7 @@ export const Projects: TProject[] = [
   {
     name: "Dia dos Namorados",
     description: "Pen em homenagem ao dia 12 de Junho, Dia dos Namorados",
-    date: "June, 2017",
+    date: "2017/06/01",
     url: "https://codepen.io/interaminense/full/WOxoyN/",
     tags: ["Css", "Javascript", "Css3", "Codepen"],
     image: DiaDosNamoradosImage,
@@ -216,7 +216,7 @@ export const Projects: TProject[] = [
   {
     name: "BEERJS RECIFE",
     description: "I am onwer for the visual and front-end creation of the page",
-    date: "March, 2017",
+    date: "2017/03/01",
     url: "https://beerjs.github.io/recife/",
     tags: ["MaterializeCss", "AngularJS", "Canvas", "Github"],
     image: BeerJSRecifeImage,
@@ -224,7 +224,7 @@ export const Projects: TProject[] = [
   {
     name: "PIÃO DA ATUALIZAÇÃO",
     description: "Pião criado apenas com Css3",
-    date: "March, 2017",
+    date: "2017/03/01",
     url: "https://alexpessoajr.github.io/piao-da-atualizacao/",
     tags: ["Css3", "Github"],
     image: PiaoDaAtualizacaoImage,
@@ -233,7 +233,7 @@ export const Projects: TProject[] = [
     name: "NEON",
     description:
       "eon example using only CSS3 and AngularJS to change the text that appears with the animation. I hope you enjoy!",
-    date: "April, 2016",
+    date: "2016/04/01",
     url: "https://codepen.io/interaminense/full/LNWPgd/",
     tags: ["AngularJS", "Css3", "Codepen"],
     image: NeonImage,
@@ -241,7 +241,7 @@ export const Projects: TProject[] = [
   {
     name: "DeAnimated",
     description: "A jQuery lightweight plugin for Animation",
-    date: "January, 2016",
+    date: "2016/01/01",
     url: "http://thiagoh.github.io/de-animate/",
     tags: ["MaterializeCss", "Javascript", "Css", "Animate.css", "Github"],
     image: DeAnimatedImage,
@@ -250,7 +250,7 @@ export const Projects: TProject[] = [
     name: "DilmesIpsum",
     description:
       "An extension for Sublime Text 2 and 3! It allows you to insert Dilmes Ipsum in the editor via menu items or keyboard shortcuts. It uses some popular phrases from Brazilian President Dilma Rousseff",
-    date: "December, 2015",
+    date: "2015/12/01",
     url: "http://thiagoh.github.io/sublime-dilmes-ipsum/",
     tags: ["Material Design", "Javascript", "Css", "Github"],
     image: DilmesIpsumImage,
