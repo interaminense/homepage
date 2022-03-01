@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.15c9e3f8.chunk.css",
-    "main.js": "/homepage/static/js/main.30038b89.chunk.js",
-    "main.js.map": "/homepage/static/js/main.30038b89.chunk.js.map",
-    "runtime-main.js": "/homepage/static/js/runtime-main.ea921f5e.js",
-    "runtime-main.js.map": "/homepage/static/js/runtime-main.ea921f5e.js.map",
-    "static/js/2.0e253047.chunk.js": "/homepage/static/js/2.0e253047.chunk.js",
-    "static/js/2.0e253047.chunk.js.map": "/homepage/static/js/2.0e253047.chunk.js.map",
+    "main.css": "/homepage/static/css/main.73b14527.chunk.css",
+    "main.js": "/homepage/static/js/main.01cdebc5.chunk.js",
+    "main.js.map": "/homepage/static/js/main.01cdebc5.chunk.js.map",
+    "runtime-main.js": "/homepage/static/js/runtime-main.4deff6df.js",
+    "runtime-main.js.map": "/homepage/static/js/runtime-main.4deff6df.js.map",
+    "static/js/2.6a9cd2dc.chunk.js": "/homepage/static/js/2.6a9cd2dc.chunk.js",
+    "static/js/2.6a9cd2dc.chunk.js.map": "/homepage/static/js/2.6a9cd2dc.chunk.js.map",
     "index.html": "/homepage/index.html",
-    "precache-manifest.4a8c4b185e6f5fd680998d8af8f7018c.js": "/homepage/precache-manifest.4a8c4b185e6f5fd680998d8af8f7018c.js",
+    "precache-manifest.86161165030cea36355744c41790e6f9.js": "/homepage/precache-manifest.86161165030cea36355744c41790e6f9.js",
     "service-worker.js": "/homepage/service-worker.js",
-    "static/css/main.15c9e3f8.chunk.css.map": "/homepage/static/css/main.15c9e3f8.chunk.css.map",
-    "static/js/2.0e253047.chunk.js.LICENSE.txt": "/homepage/static/js/2.0e253047.chunk.js.LICENSE.txt",
+    "static/css/main.73b14527.chunk.css.map": "/homepage/static/css/main.73b14527.chunk.css.map",
+    "static/js/2.6a9cd2dc.chunk.js.LICENSE.txt": "/homepage/static/js/2.6a9cd2dc.chunk.js.LICENSE.txt",
     "static/media/beer-js-recife.png": "/homepage/static/media/beer-js-recife.ae5d0b3c.png",
     "static/media/code-animated.png": "/homepage/static/media/code-animated.e77ee0b9.png",
     "static/media/css-filter-effects.png": "/homepage/static/media/css-filter-effects.79b3bc1d.png",
@@ -40,9 +40,9 @@
     "static/media/wolf.png": "/homepage/static/media/wolf.b3903541.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ea921f5e.js",
-    "static/js/2.0e253047.chunk.js",
-    "static/css/main.15c9e3f8.chunk.css",
-    "static/js/main.30038b89.chunk.js"
+    "static/js/runtime-main.4deff6df.js",
+    "static/js/2.6a9cd2dc.chunk.js",
+    "static/css/main.73b14527.chunk.css",
+    "static/js/main.01cdebc5.chunk.js"
   ]
 }
