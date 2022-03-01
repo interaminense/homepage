@@ -4,6 +4,7 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
+  faMedium,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -281,12 +282,16 @@ export const SocialNetwork: TSocialNetwork[] = [
     url: "http://behance.net/imcreator",
   },
   {
+    icon: faMedium,
+    url: "https://medium.com/@interaminense",
+  },
+  {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/adriano-interaminense-405a90b3/",
+    url: "https://linkedin.com/in/adriano-interaminense-405a90b3/",
   },
   {
     icon: faInstagram,
-    url: "http://twitter.com/adinteraminense",
+    url: "https://instagram.com/adriinteraminense/",
   },
   {
     icon: faTwitter,
