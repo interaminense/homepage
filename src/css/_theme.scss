@@ -1,55 +1,71 @@
+$darkColor: #333;
+$lightColor: #fff;
+
+@function getCustomColor($theme, $value, $type) {
+  @if ($theme == "light") {
+    @if ($type == "color") {
+      @return lighten($darkColor, $value);
+    } @else {
+      @return darken($lightColor, $value);
+    }
+  } @else {
+    @if ($type == "color") {
+      @return lighten($lightColor, $value);
+    } @else {
+      @return darken($darkColor, $value);
+    }
+  }
+}
+
+@function getColor($theme, $type) {
+  @if ($theme == "light") {
+    @if ($type == "color") {
+      @return $darkColor;
+    } @else {
+      @return $lightColor;
+    }
+  } @else {
+    @if ($type == "color") {
+      @return $lightColor;
+    } @else {
+      @return $darkColor;
+    }
+  }
+}
+
+@mixin generateTheme($theme) {
+  &--#{$theme} {
+    background-color: getCustomColor($theme, 5%, "backgroundColor");
+    color: getColor($theme, "color");
+
+    .Card {
+      color: getCustomColor($theme, 20%, "color");
+      background-color: getColor($theme, "backgroundColor");
+
+      &__name {
+        color: getColor($theme, "color");
+      }
+    }
+
+    .SocialNetwork__link {
+      color: getCustomColor($theme, 10%, "color");
+    }
+
+    .Tag {
+      background-color: getCustomColor($theme, 10%, "backgroundColor");
+    }
+
+    .Profile__toggle-theme {
+      box-shadow: 0 0 0 5px inset getColor($theme, "color");
+
+      &:hover {
+        box-shadow: 0 0 0 3px inset getColor($theme, "color");
+      }
+    }
+  }
+}
+
 .App-theme {
-  &--light {
-    background-color: #f4f4f4;
-    color: #333;
-
-    .Card {
-      color: lighten(#000, 30%);
-      background-color: #fff;
-
-      &__name {
-        color: #333;
-      }
-    }
-
-    .SocialNetwork__link {
-      color: lighten(#000, 30%);
-    }
-
-    .Tag {
-      background-color: lighten(#333, 70%);
-    }
-
-    .Profile__toggle-theme {
-      background: #ffff;
-      box-shadow: 0 0 0 6px inset #333;
-    }
-  }
-
-  &--dark {
-    background-color: #333;
-    color: #fff;
-
-    .Card {
-      color: darken(#fff, 30%);
-      background-color: #212121;
-
-      &__name {
-        color: #fff;
-      }
-    }
-
-    .SocialNetwork__link {
-      color: darken(#fff, 30%);
-    }
-
-    .Tag {
-      background-color: darken(#fff, 80%);
-    }
-
-    .Profile__toggle-theme {
-      background: #333;
-      box-shadow: 0 0 0 6px inset #fff;
-    }
-  }
+  @include generateTheme("light");
+  @include generateTheme("dark");
 }

@@ -24,9 +24,6 @@
     border: 0 none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+    background-color: transparent;
   }
 }
