@@ -1,25 +1,11 @@
 import { TProject, TTheme } from "../types";
+import { months } from "./constants";
 
 export const getTheme = (): TTheme => {
   const hour = new Date().getHours();
 
   return hour > 5 && hour < 17 ? "light" : "dark";
 };
-
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 
 export const formatProjects = (projects: TProject[]): TProject[] => {
   const formattedProjects = projects

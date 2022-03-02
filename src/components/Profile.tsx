@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Thumbnail from "./Thumbnail";
 import { TProfile } from "../types";
 import AppContext from "../AppContext";
+import { Language } from "../utils/constants";
 
 const THUMBNAIL_SIZE = 128;
 
@@ -31,6 +32,7 @@ const Profile: React.FC<IProfileProps> = ({
             src={image(THUMBNAIL_SIZE)}
           />
           <button
+            title={Language.ToggleTheme}
             className="Profile__toggle-theme"
             onClick={() => {
               toggleTheme({ theme: theme === "light" ? "dark" : "light" });
