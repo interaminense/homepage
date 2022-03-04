@@ -21,7 +21,7 @@ const App: React.FC<React.HTMLAttributes<HTMLElement>> = () => {
     <div className={`App App-theme--${theme}`}>
       <Layout>
         <Layout.Row>
-          <Layout.Column size={3}>
+          <Layout.Column className="App__left-column" size={3}>
             <div className="sticky">
               <Layout.Row>
                 <Layout.Column size={12}>
@@ -33,7 +33,7 @@ const App: React.FC<React.HTMLAttributes<HTMLElement>> = () => {
               </Layout.Row>
             </div>
           </Layout.Column>
-          <Layout.Column size={9}>
+          <Layout.Column className="App__right-column" size={9}>
             <CardList items={formatProjects(Projects)} />
           </Layout.Column>
         </Layout.Row>

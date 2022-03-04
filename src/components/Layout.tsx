@@ -6,9 +6,9 @@ interface IColumnProps extends React.HTMLAttributes<HTMLElement> {
   size: TLayoutSize;
 }
 
-const Column: React.FC<IColumnProps> = ({ children, size }) => (
+const Column: React.FC<IColumnProps> = ({ className, children, size }) => (
   <div
-    className={classNames("Layout__column", "col col-xs-12", {
+    className={classNames(className, "Layout__column", "col col-xs-12", {
       [`Layout__column--${size}`]: size,
       [`col-sm-${size}`]: size,
     })}
@@ -17,8 +17,11 @@ const Column: React.FC<IColumnProps> = ({ children, size }) => (
   </div>
 );
 
-const Row: React.FC<React.HTMLAttributes<HTMLElement>> = ({ children }) => (
-  <div className="row no-baseline">{children}</div>
+const Row: React.FC<React.HTMLAttributes<HTMLElement>> = ({
+  className,
+  children,
+}) => (
+  <div className={classNames(className, "row no-baseline")}>{children}</div>
 );
 
 const Layout: React.FC<React.HTMLAttributes<HTMLElement>> & {

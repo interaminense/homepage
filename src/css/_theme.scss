@@ -38,6 +38,10 @@ $lightColor: #fff;
     background-color: getCustomColor($theme, 5%, "backgroundColor");
     color: getColor($theme, "color");
 
+    .App__left-column {
+      background-color: getCustomColor($theme, 0%, "backgroundColor");
+    }
+
     .Card {
       color: getCustomColor($theme, 20%, "color");
       background-color: getColor($theme, "backgroundColor");

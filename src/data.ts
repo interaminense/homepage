@@ -260,7 +260,7 @@ export const Projects: TProject[] = [
 export const Profile: TProfile = {
   name: "Adriano Interaminense",
   description: (age, experienceTime) =>
-    `Hi, nice to see you! I am ${age} years old and have been working in the web development for ${experienceTime}. I currently work at Liferay as a Frontend Engineer and I love what I do!`,
+    `Hi, nice to see you! I am ${age} years old and have been working in the web development for ${experienceTime} years. I currently work at Liferay as a Frontend Engineer and I love what I do!`,
   image: (thumbnailSize) =>
     `https://avatars2.githubusercontent.com/u/12699849?s=${thumbnailSize}&u=813da44f9c0ec4a88aa0be8ce52f35bc0b123a74&v=4`,
   birthYear: 1989,
