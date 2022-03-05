@@ -1,6 +1,14 @@
 $darkColor: #333;
 $lightColor: #fff;
 
+@function getOpacityColor($theme, $value) {
+  @if ($theme == "light") {
+    @return rgba($darkColor, $value);
+  } @else {
+    @return rgba($lightColor, $value);
+  }
+}
+
 @function getCustomColor($theme, $value, $type) {
   @if ($theme == "light") {
     @if ($type == "color") {
@@ -48,6 +56,20 @@ $lightColor: #fff;
 
       &__name {
         color: getColor($theme, "color");
+      }
+    }
+
+    .Header {
+      background-color: getCustomColor($theme, 5%, "backgroundColor");
+      box-shadow: 800px -100px 20px 100px #{getCustomColor(
+          $theme,
+          20%,
+          "backgroundColor"
+        )};
+
+      &__search-by-keyword {
+        color: getColor($theme, "color");
+        border-bottom: 1px solid getOpacityColor($theme, 0.1);
       }
     }
 

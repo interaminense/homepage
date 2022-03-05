@@ -5,6 +5,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -15,13 +16,24 @@ body {
 
 .sticky {
   position: sticky !important;
-  top: 20px;
+  top: 0px;
 }
 
-@import "theme.scss";
-@import "profile.scss";
-@import "thumbnail.scss";
+// Variables
+
+$headerPadding: 1rem;
+$inputSearchByKeywordHeight: 30px;
+
+// Components sorted alphabetically
+
 @import "card_list.scss";
 @import "card.scss";
+@import "header.scss";
+@import "profile.scss";
 @import "social_network.scss";
 @import "tag.scss";
+@import "thumbnail.scss";
+
+// Theme must be imported at the end to replace the colors
+
+@import "theme.scss";

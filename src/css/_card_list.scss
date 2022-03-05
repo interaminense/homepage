@@ -9,4 +9,13 @@
     margin-bottom: 2rem;
     break-inside: avoid;
   }
+
+  &-empty-state {
+    align-items: center;
+    display: flex;
+    height: calc(
+      100vh - #{$headerPadding * 2} - #{$inputSearchByKeywordHeight}
+    );
+    justify-content: center;
+  }
 }

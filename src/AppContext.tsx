@@ -4,10 +4,12 @@ import { getTheme } from "./utils/utils";
 
 enum ActionTypes {
   ToggleTheme = "TOGGLE_THEME",
+  SetKeyword = "SET_KEYWORD",
 }
 
 type TInitialState = {
-  theme: TTheme;
+  theme?: TTheme;
+  keyword?: string;
 };
 
 type TPayload = {
@@ -21,31 +23,43 @@ type TAction = {
 
 type TToggleTheme = (params: { theme: TTheme }) => void;
 
+type TSetKeyword = (params: { keyword: string }) => void;
+
 type TContextValue = TPayload & TActionsFn;
 
 type TActionsFn = {
   toggleTheme: TToggleTheme;
+  setKeyword: TSetKeyword;
 };
 
 const initialState: TInitialState = {
   theme: getTheme(),
+  keyword: "",
 };
 
 const AppContext = createContext<TInitialState & TActionsFn>({
   ...initialState,
   toggleTheme: () => {},
+  setKeyword: () => {},
 });
 
 const actionHandlers = {
   [ActionTypes.ToggleTheme]: (
     state: TInitialState,
-    action: TAction
+    { payload: { theme } }: TAction
   ): TInitialState => {
-    console.log(action.payload.theme);
-
     return {
       ...state,
-      theme: action.payload.theme,
+      theme,
+    };
+  },
+  [ActionTypes.SetKeyword]: (
+    state: TInitialState,
+    { payload: { keyword } }: TAction
+  ): TInitialState => {
+    return {
+      ...state,
+      keyword,
     };
   },
 };
@@ -67,6 +81,8 @@ export const AppContextProvider: React.FC<React.HTMLAttributes<
 
   const contextValue: TContextValue = {
     ...state,
+    setKeyword: (payload) =>
+      dispatch({ type: ActionTypes.SetKeyword, payload }),
     toggleTheme: (payload) =>
       dispatch({
         type: ActionTypes.ToggleTheme,
