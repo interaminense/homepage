@@ -34,7 +34,7 @@ const CardList: React.FC<ICardListProps> = ({ items }) => {
         </ul>
       ) : (
         <div className="CardList-empty-state">
-          <p>{Language.ThereIsNoCardWithThisFilter}</p>
+          <p>{Language.ThereAreNoCardsWithThisFilter}</p>
         </div>
       )}
     </>
