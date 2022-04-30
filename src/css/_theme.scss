@@ -73,6 +73,11 @@ $lightColor: #fff;
       }
     }
 
+    .Filter__trigger {
+      background-color: getCustomColor($theme, 10%, "backgroundColor");
+      color: getColor($theme, "color");
+    }
+
     .SocialNetwork__link {
       color: getCustomColor($theme, 10%, "color");
     }

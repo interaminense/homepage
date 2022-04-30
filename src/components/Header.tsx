@@ -1,21 +1,12 @@
 import React from "react";
-import AppContext from "../AppContext";
-import { Language } from "../utils/constants";
+import Filter from "./Filter";
+import SearchInput from "./SearchInput";
 
-const Header = () => {
-  const { keyword, setKeyword } = React.useContext(AppContext);
-
+const Header: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
   return (
     <div className="Header sticky">
-      <input
-        placeholder={Language.SearchByTags}
-        className="Header__search-by-keyword"
-        type="text"
-        value={keyword}
-        onChange={({ target: { value } }) => {
-          setKeyword({ keyword: value });
-        }}
-      />
+      <Filter />
+      <SearchInput />
     </div>
   );
 };

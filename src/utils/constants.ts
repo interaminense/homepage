@@ -16,5 +16,6 @@ export const months = [
 export enum Language {
   ToggleTheme = "Toggle Theme",
   SearchByTags = "Seach by tags...",
-  ThereIsNoCardWithThisFilter = "There is no card with this filter.",
+  ThereAreNoCardsWithThisFilter = "There is no card with this filter.",
+  FilterByTagName = "Filter by tag",
 }

@@ -1,10 +1,26 @@
 import { TProject, TTheme } from "../types";
 import { months } from "./constants";
 
+const capitalizeFirstLetter = (str: string): string => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+const removeRepeatedItems = (arr: string[]): string[] =>
+  arr.filter((item, i) => arr.indexOf(item) === i);
+
 export const getTheme = (): TTheme => {
   const hour = new Date().getHours();
 
   return hour > 5 && hour < 17 ? "light" : "dark";
+};
+
+export const getAllTags = (projects: TProject[]): string[] => {
+  const arrFlat = projects
+    .map((project) => project.tags?.map(capitalizeFirstLetter) ?? [])
+    .sort()
+    .flat();
+
+  return removeRepeatedItems(arrFlat);
 };
 
 export const formatProjects = (projects: TProject[]): TProject[] => {
