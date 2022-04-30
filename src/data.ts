@@ -35,6 +35,7 @@ import NeonImage from "./images/neon.png";
 import DeAnimatedImage from "./images/de-animated.png";
 import DilmesIpsumImage from "./images/dilmes-ipsum.png";
 import { TProfile, TProject, TSocialNetwork } from "./types";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export const Projects: TProject[] = [
   {
@@ -77,7 +78,7 @@ export const Projects: TProject[] = [
     description: "Pen created with data base Firebase. Say hello to world!",
     date: "2017/08/01",
     url: "https://codepen.io/interaminense/full/MvQVjQ",
-    tags: ["Css3", "firebase", "angulaJS", "codepen"],
+    tags: ["Css3", "firebase", "angularJS", "codepen"],
     image: sayHelloToWorldImage,
   },
   {
@@ -269,31 +270,31 @@ export const Profile: TProfile = {
 
 export const SocialNetwork: TSocialNetwork[] = [
   {
-    icon: faGithub,
+    icon: faGithub as IconProp,
     url: "http://github.com/interaminense",
   },
   {
-    icon: faCodepen,
+    icon: faCodepen as IconProp,
     url: "http://codepen.io/interaminense",
   },
   {
-    icon: faBehance,
+    icon: faBehance as IconProp,
     url: "http://behance.net/imcreator",
   },
   {
-    icon: faMedium,
+    icon: faMedium as IconProp,
     url: "https://medium.com/@interaminense",
   },
   {
-    icon: faLinkedin,
+    icon: faLinkedin as IconProp,
     url: "https://linkedin.com/in/adriano-interaminense-405a90b3/",
   },
   {
-    icon: faInstagram,
+    icon: faInstagram as IconProp,
     url: "https://instagram.com/adriinteraminense/",
   },
   {
-    icon: faTwitter,
+    icon: faTwitter as IconProp,
     url: "http://twitter.com/adinteraminense",
   },
 ];

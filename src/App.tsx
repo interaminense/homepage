@@ -42,10 +42,8 @@ const App: React.FC<React.HTMLAttributes<HTMLElement>> = () => {
   );
 };
 
-export default () => {
-  return (
-    <AppContextProvider>
-      <App />
-    </AppContextProvider>
-  );
-};
+export default () => (
+  <AppContextProvider>
+    <App />
+  </AppContextProvider>
+);
