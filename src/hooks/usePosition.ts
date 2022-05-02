@@ -19,7 +19,7 @@ const usePosition = (
       elementRef.current?.getBoundingClientRect() ?? {};
 
     setDropdownPosition({ left, top: top + height + spacing });
-  }, [elementRef]);
+  }, [elementRef, spacing]);
 
   return dropdownPosition;
 };

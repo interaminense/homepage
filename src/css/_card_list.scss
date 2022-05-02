@@ -1,7 +1,8 @@
 .CardList {
   column-count: 3;
   column-gap: 2rem;
-  margin: 2rem 0;
+  margin: 2rem;
+  padding: 0;
 
   &__item {
     display: grid;

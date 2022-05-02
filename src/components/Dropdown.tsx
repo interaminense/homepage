@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import useOnClickOutside from "../hooks/useClickOutside";
 import usePosition from "../hooks/usePosition";

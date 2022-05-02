@@ -4,7 +4,7 @@ import SearchInput from "./SearchInput";
 
 const Header: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
   return (
-    <div className="Header sticky">
+    <div className="Header">
       <Filter />
       <SearchInput />
     </div>
