@@ -15,8 +15,11 @@ const usePosition = (
   });
 
   useEffect(() => {
-    const { left = 0, top = 0, height = 0 } =
-      elementRef.current?.getBoundingClientRect() ?? {};
+    const {
+      left = 0,
+      top = 0,
+      height = 0,
+    } = elementRef.current?.getBoundingClientRect() ?? {};
 
     setDropdownPosition({ left, top: top + height + spacing });
   }, [elementRef, spacing]);

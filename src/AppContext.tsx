@@ -74,9 +74,9 @@ const reducer = (state: TInitialState, action: TAction): TInitialState => {
   throw new Error(`Unhandled action type: ${action.type}`);
 };
 
-export const AppContextProvider: React.FC<React.HTMLAttributes<
-  HTMLElement
->> = ({ children }) => {
+export const AppContextProvider: React.FC<
+  React.HTMLAttributes<HTMLElement>
+> = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const contextValue: TContextValue = {
