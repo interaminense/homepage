@@ -21,7 +21,3 @@ export type TSocialNetwork = {
   icon: FontAwesomeIconProps["icon"];
   url: string;
 };
-
-export type TTheme = "light" | "dark";
-
-export type TLayoutSize = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
