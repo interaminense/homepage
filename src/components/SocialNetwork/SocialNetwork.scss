@@ -1,0 +1,17 @@
+.social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 4rem 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+
+  &__item a {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}

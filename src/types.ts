@@ -11,10 +11,10 @@ export type TProject = {
 
 export type TProfile = {
   name: string;
-  description: (age: number, experienceTime: number) => string;
+  brief: string;
+  description: string;
   image: (thumbnailSize: number) => string;
-  birthYear: number;
-  startWoring: number;
+  skills: string[];
 };
 
 export type TSocialNetwork = {

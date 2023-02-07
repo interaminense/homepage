@@ -8,34 +8,36 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-import steveJobsImage from "./images/steve-jobs.png";
-import customYourCarImage from "./images/custom-your-car.png";
-import cssPerspectiveImage from "./images/css-perspective.png";
-import wolfImage from "./images/wolf.png";
-import sayHelloToWorldImage from "./images/say-hello-to-world.png";
-import starrySkyImage from "./images/starry-sky.png";
-import earthDayImage from "./images/earth-day.png";
-import codeAnimatedImage from "./images/code-animated.png";
-import cssFilterEffectsImage from "./images/css-filter-effects.png";
-import FifteenPuzzleGameImage from "./images/fifteen-puzzle-game.png";
-import MemoryGameJSImage from "./images/memory-game-js.png";
-import ReactUIThermometerImage from "./images/react-ui-thermometer.png";
-import PlottingPerfectYAxesImage from "./images/plotting-perfect-y-axes.png";
-import LearningEnglishImage from "./images/learning-english.gif";
-import ReactPortfolioBehanceImage from "./images/react-portfolio-behance.png";
-import SimpleGridCssImage from "./images/simple-grid-css.png";
-import MathematicsImage from "./images/mathematics.png";
-import SidebarDirectiveAngularJSImage from "./images/sidebar-directive-angular-js.png";
-import MarionetteImage from "./images/marionette.png";
-import LettersAnimatedImage from "./images/letters-animated.png";
-import DiaDosNamoradosImage from "./images/dia-dos-namorados.png";
-import BeerJSRecifeImage from "./images/beer-js-recife.png";
-import PiaoDaAtualizacaoImage from "./images/piao-da-atualizacao.png";
-import NeonImage from "./images/neon.png";
-import DeAnimatedImage from "./images/de-animated.png";
-import DilmesIpsumImage from "./images/dilmes-ipsum.png";
+import steveJobsImage from "./images/thumbnails/steve-jobs.png";
+import customYourCarImage from "./images/thumbnails/custom-your-car.png";
+import cssPerspectiveImage from "./images/thumbnails/css-perspective.png";
+import wolfImage from "./images/thumbnails/wolf.png";
+import sayHelloToWorldImage from "./images/thumbnails/say-hello-to-world.png";
+import starrySkyImage from "./images/thumbnails/starry-sky.png";
+import earthDayImage from "./images/thumbnails/earth-day.png";
+import codeAnimatedImage from "./images/thumbnails/code-animated.png";
+import cssFilterEffectsImage from "./images/thumbnails/css-filter-effects.png";
+import FifteenPuzzleGameImage from "./images/thumbnails/fifteen-puzzle-game.png";
+import MemoryGameJSImage from "./images/thumbnails/memory-game-js.png";
+import ReactUIThermometerImage from "./images/thumbnails/react-ui-thermometer.png";
+import PlottingPerfectYAxesImage from "./images/thumbnails/plotting-perfect-y-axes.png";
+import LearningEnglishImage from "./images/thumbnails/learning-english.gif";
+import ReactPortfolioBehanceImage from "./images/thumbnails/react-portfolio-behance.png";
+import SimpleGridCssImage from "./images/thumbnails/simple-grid-css.png";
+import MathematicsImage from "./images/thumbnails/mathematics.png";
+import SidebarDirectiveAngularJSImage from "./images/thumbnails/sidebar-directive-angular-js.png";
+import MarionetteImage from "./images/thumbnails/marionette.png";
+import LettersAnimatedImage from "./images/thumbnails/letters-animated.png";
+import DiaDosNamoradosImage from "./images/thumbnails/dia-dos-namorados.png";
+import BeerJSRecifeImage from "./images/thumbnails/beer-js-recife.png";
+import PiaoDaAtualizacaoImage from "./images/thumbnails/piao-da-atualizacao.png";
+import NeonImage from "./images/thumbnails/neon.png";
+import DeAnimatedImage from "./images/thumbnails/de-animated.png";
+import DilmesIpsumImage from "./images/thumbnails/dilmes-ipsum.png";
 import { TProfile, TProject, TSocialNetwork } from "./types";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
+const year = new Date().getFullYear();
 
 export const Projects: TProject[] = [
   {
@@ -233,7 +235,7 @@ export const Projects: TProject[] = [
   {
     name: "NEON",
     description:
-      "eon example using only CSS3 and AngularJS to change the text that appears with the animation. I hope you enjoy!",
+      "Neon example using only CSS3 and AngularJS to change the text that appears with the animation. I hope you enjoy!",
     date: "2016/04/01",
     url: "https://codepen.io/interaminense/full/LNWPgd/",
     tags: ["AngularJS", "Css3", "Codepen"],
@@ -260,12 +262,23 @@ export const Projects: TProject[] = [
 
 export const Profile: TProfile = {
   name: "Adriano Interaminense",
-  description: (age, experienceTime) =>
-    `Hi, nice to see you! I am ${age} years old and have been working in the web development for ${experienceTime} years. I currently work at Liferay as a Frontend Engineer and I love what I do!`,
+  brief: `Hello, nice to meet you! I'm a ${
+    year - 1989
+  } year old, professional with ${
+    year - 2009
+  } years of web development experience.`,
+  description: `Currently, I work as a Frontend Engineer at Liferay, where I apply my coding and design pattern to create amazing solutions for our clients. I'm also passionate about technology and always strive to stay up-to-date with the latest trends and innovations in the industry. My goal is to continue growing professionally and to contribute to making the web even more accessible and inclusive for everyone.`,
   image: (thumbnailSize) =>
     `https://avatars2.githubusercontent.com/u/12699849?s=${thumbnailSize}&u=813da44f9c0ec4a88aa0be8ce52f35bc0b123a74&v=4`,
-  birthYear: 1989,
-  startWoring: 2009,
+  skills: [
+    "React",
+    "Typescript",
+    "Javascript",
+    "CSS",
+    "NodeJS",
+    "GraphQL",
+    "Frontend Tooling",
+  ],
 };
 
 export const SocialNetwork: TSocialNetwork[] = [

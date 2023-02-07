@@ -1,0 +1,13 @@
+.tag {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  margin: 0 5px 5px 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  display: inline-block;
+
+  > div {
+    transform: translateY(2px);
+  }
+}

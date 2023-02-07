@@ -1,0 +1,49 @@
+.footer {
+  transform: translate(-2rem, 2rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100%);
+  border-radius: 0 0 1rem 1rem;
+  padding: 2rem;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
+    opacity: 0.1;
+    background-size: cover;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+  }
+
+  &__midjourney {
+    display: flex;
+  }
+
+  &__midjourney-text {
+    max-width: 150px;
+  }
+
+  &__background-page {
+    width: 100px;
+    height: 120px;
+    background-size: 100%;
+    margin-right: 2rem;
+  }
+
+  &__signature {
+    text-align: right;
+  }
+
+  &__github {
+    text-align: center;
+  }
+}

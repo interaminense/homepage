@@ -1,0 +1,16 @@
+.container {
+  padding: 4rem 0;
+
+  &__content {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(15, 15, 15);
+    padding: 2rem;
+    box-shadow: 20px 20px 20px 0px rgba(1, 1, 1, 0.05);
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400&family=Oswald:wght@500&display=swap");
+
+:root {
+  --primary-font: "Oswald", sans-serif;
+  --secondary-font: "Hind", sans-serif;
+  --bg-color: #0a1318;
+  --background: url("");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--bg-color);
+  backdrop-filter: blur(20px);
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
