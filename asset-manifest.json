@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.0c0b25c7.css",
-    "main.js": "/homepage/static/js/main.ffe5f2a2.js",
+    "main.css": "/homepage/static/css/main.e3e0cd73.css",
+    "main.js": "/homepage/static/js/main.ed774387.js",
     "static/media/learning-english.gif": "/homepage/static/media/learning-english.7fb3f993eea971070e86.gif",
     "static/media/say-hello-to-world.png": "/homepage/static/media/say-hello-to-world.57c37f4f19a38973323b.png",
     "static/media/dilmes-ipsum.png": "/homepage/static/media/dilmes-ipsum.abc905532e3220ab30f7.png",
@@ -29,11 +29,11 @@
     "static/media/sidebar-directive-angular-js.png": "/homepage/static/media/sidebar-directive-angular-js.3d3e2c10b406fd215e08.png",
     "static/media/steve-jobs.png": "/homepage/static/media/steve-jobs.ecc6baf6f41a3fd2c4d7.png",
     "index.html": "/homepage/index.html",
-    "main.0c0b25c7.css.map": "/homepage/static/css/main.0c0b25c7.css.map",
-    "main.ffe5f2a2.js.map": "/homepage/static/js/main.ffe5f2a2.js.map"
+    "main.e3e0cd73.css.map": "/homepage/static/css/main.e3e0cd73.css.map",
+    "main.ed774387.js.map": "/homepage/static/js/main.ed774387.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c0b25c7.css",
-    "static/js/main.ffe5f2a2.js"
+    "static/css/main.e3e0cd73.css",
+    "static/js/main.ed774387.js"
   ]
 }
