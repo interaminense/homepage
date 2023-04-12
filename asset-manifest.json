@@ -1,39 +1,15 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.e3e0cd73.css",
-    "main.js": "/homepage/static/js/main.ed774387.js",
-    "static/media/learning-english.gif": "/homepage/static/media/learning-english.7fb3f993eea971070e86.gif",
-    "static/media/say-hello-to-world.png": "/homepage/static/media/say-hello-to-world.57c37f4f19a38973323b.png",
-    "static/media/dilmes-ipsum.png": "/homepage/static/media/dilmes-ipsum.abc905532e3220ab30f7.png",
-    "static/media/neon.png": "/homepage/static/media/neon.a585fb75f33745f9f161.png",
-    "static/media/de-animated.png": "/homepage/static/media/de-animated.f7c47f1b01ee015daf78.png",
-    "static/media/css-filter-effects.png": "/homepage/static/media/css-filter-effects.747ec526ed550758b46b.png",
-    "static/media/fifteen-puzzle-game.png": "/homepage/static/media/fifteen-puzzle-game.47d1e69bae54af9b99d2.png",
-    "static/media/react-portfolio-behance.png": "/homepage/static/media/react-portfolio-behance.2d75c872d6f163825cea.png",
-    "static/media/piao-da-atualizacao.png": "/homepage/static/media/piao-da-atualizacao.75ce1bf8bfda50e06aa5.png",
-    "static/media/memory-game-js.png": "/homepage/static/media/memory-game-js.5b43ae13d7263f306b6f.png",
-    "static/media/starry-sky.png": "/homepage/static/media/starry-sky.c23ec3afb601669482ef.png",
-    "static/media/wolf.png": "/homepage/static/media/wolf.ace1a4f881261234b9cb.png",
-    "static/media/earth-day.png": "/homepage/static/media/earth-day.eca3b46b9d3c8afff092.png",
-    "static/media/simple-grid-css.png": "/homepage/static/media/simple-grid-css.4db7544f8fb7d78a9c62.png",
-    "static/media/dia-dos-namorados.png": "/homepage/static/media/dia-dos-namorados.f46fc748680c3188195e.png",
-    "static/media/custom-your-car.png": "/homepage/static/media/custom-your-car.6c9dc4a46c764d295622.png",
-    "static/media/plotting-perfect-y-axes.png": "/homepage/static/media/plotting-perfect-y-axes.22e8f47462214e1eb9aa.png",
-    "static/media/css-perspective.png": "/homepage/static/media/css-perspective.1908517fc4e11177be21.png",
-    "static/media/mathematics.png": "/homepage/static/media/mathematics.f4aba4cba204a672f3bc.png",
-    "static/media/code-animated.png": "/homepage/static/media/code-animated.3574344a085f761ef4e6.png",
-    "static/media/letters-animated.png": "/homepage/static/media/letters-animated.01279b8e3b2b285f9a80.png",
-    "static/media/marionette.png": "/homepage/static/media/marionette.db63cf4f02fbc6e526a7.png",
-    "static/media/beer-js-recife.png": "/homepage/static/media/beer-js-recife.cf2a4a23259238723274.png",
-    "static/media/react-ui-thermometer.png": "/homepage/static/media/react-ui-thermometer.3d3e2c10b406fd215e08.png",
-    "static/media/sidebar-directive-angular-js.png": "/homepage/static/media/sidebar-directive-angular-js.3d3e2c10b406fd215e08.png",
-    "static/media/steve-jobs.png": "/homepage/static/media/steve-jobs.ecc6baf6f41a3fd2c4d7.png",
+    "main.css": "/homepage/static/css/main.c92af342.css",
+    "main.js": "/homepage/static/js/main.a66964a4.js",
+    "static/js/787.5c39024c.chunk.js": "/homepage/static/js/787.5c39024c.chunk.js",
     "index.html": "/homepage/index.html",
-    "main.e3e0cd73.css.map": "/homepage/static/css/main.e3e0cd73.css.map",
-    "main.ed774387.js.map": "/homepage/static/js/main.ed774387.js.map"
+    "main.c92af342.css.map": "/homepage/static/css/main.c92af342.css.map",
+    "main.a66964a4.js.map": "/homepage/static/js/main.a66964a4.js.map",
+    "787.5c39024c.chunk.js.map": "/homepage/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3e0cd73.css",
-    "static/js/main.ed774387.js"
+    "static/css/main.c92af342.css",
+    "static/js/main.a66964a4.js"
   ]
 }
